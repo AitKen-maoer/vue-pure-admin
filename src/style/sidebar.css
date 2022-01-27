@@ -1,0 +1,444 @@
+body[data-theme="dark"] .main-container {
+  min-height: 100%;
+  -webkit-transition: margin-left 0.28s;
+  transition: margin-left 0.28s;
+  margin-left: 210px;
+  position: relative;
+}
+
+body[data-theme="dark"] .sidebar-container {
+  -webkit-transition: width 0.28s;
+  transition: width 0.28s;
+  width: 210px !important;
+  background-color: #1b2a47;
+  height: 100%;
+  position: fixed;
+  font-size: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 1px #888888;
+          box-shadow: 0 0 1px #888888;
+}
+
+body[data-theme="dark"] .sidebar-container .horizontal-collapse-transition {
+  -webkit-transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+  transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+}
+
+body[data-theme="dark"] .sidebar-container .scrollbar-wrapper {
+  overflow-x: hidden !important;
+}
+
+body[data-theme="dark"] .sidebar-container .el-scrollbar__bar.is-vertical {
+  right: 0px;
+}
+
+body[data-theme="dark"] .sidebar-container .el-scrollbar {
+  height: 100%;
+}
+
+body[data-theme="dark"] .sidebar-container.has-logo .el-scrollbar {
+  height: calc(100% - 50px);
+}
+
+body[data-theme="dark"] .sidebar-container .is-horizontal {
+  display: none;
+}
+
+body[data-theme="dark"] .sidebar-container a {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+body[data-theme="dark"] .sidebar-container .el-menu {
+  border: none;
+  height: 100%;
+}
+
+body[data-theme="dark"] .sidebar-container .el-menu-item,
+body[data-theme="dark"] .sidebar-container .el-submenu__title {
+  color: #7a80b4;
+}
+
+body[data-theme="dark"] .sidebar-container .el-menu {
+  background-color: transparent;
+}
+
+body[data-theme="dark"] .sidebar-container .submenu-title-noDropdown,
+body[data-theme="dark"] .sidebar-container .el-submenu__title {
+  background: #1b2a47;
+}
+
+body[data-theme="dark"] .sidebar-container .submenu-title-noDropdown:hover,
+body[data-theme="dark"] .sidebar-container .el-submenu__title:hover {
+  background-color: #2a395b !important;
+}
+
+body[data-theme="dark"] .sidebar-container .is-active > .el-submenu__title,
+body[data-theme="dark"] .sidebar-container .is-active.submenu-title-noDropdown {
+  color: #f4f4f5 !important;
+}
+
+body[data-theme="dark"] .sidebar-container .is-active > .el-submenu__title i,
+body[data-theme="dark"] .sidebar-container .is-active.submenu-title-noDropdown i {
+  color: #f4f4f5 !important;
+}
+
+body[data-theme="dark"] .sidebar-container .is-active {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #f4f4f5 !important;
+}
+
+body[data-theme="dark"] .sidebar-container .nest-menu .el-submenu > .el-submenu__title,
+body[data-theme="dark"] .sidebar-container .el-submenu .el-menu-item {
+  font-size: 12px;
+  min-width: 210px !important;
+  background-color: #1f2d3d !important;
+}
+
+body[data-theme="dark"] .sidebar-container .nest-menu .el-submenu > .el-submenu__title:hover,
+body[data-theme="dark"] .sidebar-container .el-submenu .el-menu-item:hover {
+  background-color: #001528 !important;
+}
+
+body[data-theme="dark"] .hideSidebar .sidebar-container {
+  width: 54px !important;
+}
+
+body[data-theme="dark"] .hideSidebar .main-container {
+  margin-left: 54px;
+}
+
+body[data-theme="dark"] .hideSidebar .submenu-title-noDropdown {
+  padding: 0 !important;
+  position: relative;
+}
+
+body[data-theme="dark"] .hideSidebar .submenu-title-noDropdown .el-tooltip {
+  padding: 0 !important;
+}
+
+body[data-theme="dark"] .hideSidebar .el-submenu {
+  overflow: hidden;
+}
+
+body[data-theme="dark"] .hideSidebar .el-submenu > .el-submenu__title .el-submenu__icon-arrow {
+  display: none;
+}
+
+body[data-theme="dark"] .hideSidebar .el-menu--collapse {
+  margin-left: -5px;
+}
+
+body[data-theme="dark"] .hideSidebar .el-menu--collapse .el-submenu > .el-submenu__title > span {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+}
+
+body[data-theme="dark"] .el-menu--vertical .el-menu--popup {
+  background-color: #1f2d3d !important;
+}
+
+body[data-theme="dark"] .el-menu--vertical .el-menu--popup .el-menu-item {
+  color: #7a80b4;
+  background-color: #1f2d3d;
+}
+
+body[data-theme="dark"] .el-menu--vertical .el-menu--popup .el-menu-item:hover {
+  background-color: #001528;
+}
+
+body[data-theme="dark"] .el-menu--vertical .el-menu--popup .el-submenu__title {
+  color: #7a80b4;
+}
+
+body[data-theme="dark"] .el-menu--vertical > .el-menu i {
+  margin-right: 16px;
+}
+
+body[data-theme="dark"] .el-menu--vertical .is-active > .el-submenu__title,
+body[data-theme="dark"] .el-menu--vertical .is-active.submenu-title-noDropdown {
+  color: #f4f4f5 !important;
+}
+
+body[data-theme="dark"] .el-menu--vertical .is-active > .el-submenu__title i,
+body[data-theme="dark"] .el-menu--vertical .is-active.submenu-title-noDropdown i {
+  color: #f4f4f5 !important;
+}
+
+body[data-theme="dark"] .el-menu--vertical .is-active {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #f4f4f5 !important;
+}
+
+body[data-theme="dark"] .el-menu--vertical .nest-menu .el-submenu > .el-submenu__title:hover,
+body[data-theme="dark"] .el-menu--vertical .el-menu-item:hover {
+  background-color: #2a395b !important;
+}
+
+body[data-theme="dark"] .el-scrollbar__wrap {
+  overflow: auto;
+  height: 100%;
+}
+
+body[data-theme="dark"] .el-menu--collapse .el-menu .el-submenu {
+  min-width: 210px !important;
+}
+
+body[data-theme="dark"] .mobile .main-container {
+  margin-left: 0px;
+}
+
+body[data-theme="dark"] .mobile .sidebar-container {
+  -webkit-transition: -webkit-transform 0.28s;
+  transition: -webkit-transform 0.28s;
+  transition: transform 0.28s;
+  transition: transform 0.28s, -webkit-transform 0.28s;
+  width: 210px !important;
+}
+
+body[data-theme="dark"] .mobile.hideSidebar .sidebar-container {
+  pointer-events: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transform: translate3d(-210px, 0, 0);
+          transform: translate3d(-210px, 0, 0);
+}
+
+body[data-theme="dark"] .withoutAnimation .main-container,
+body[data-theme="dark"] .withoutAnimation .sidebar-container {
+  -webkit-transition: none;
+  transition: none;
+}
+
+body[data-theme="light"] .main-container {
+  min-height: 100%;
+  -webkit-transition: margin-left 0.28s;
+  transition: margin-left 0.28s;
+  margin-left: 210px;
+  position: relative;
+}
+
+body[data-theme="light"] .sidebar-container {
+  -webkit-transition: width 0.28s;
+  transition: width 0.28s;
+  width: 210px !important;
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  font-size: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 1px #888888;
+          box-shadow: 0 0 1px #888888;
+}
+
+body[data-theme="light"] .sidebar-container .horizontal-collapse-transition {
+  -webkit-transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+  transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+}
+
+body[data-theme="light"] .sidebar-container .scrollbar-wrapper {
+  overflow-x: hidden !important;
+}
+
+body[data-theme="light"] .sidebar-container .el-scrollbar__bar.is-vertical {
+  right: 0px;
+}
+
+body[data-theme="light"] .sidebar-container .el-scrollbar {
+  height: 100%;
+}
+
+body[data-theme="light"] .sidebar-container.has-logo .el-scrollbar {
+  height: calc(100% - 50px);
+}
+
+body[data-theme="light"] .sidebar-container .is-horizontal {
+  display: none;
+}
+
+body[data-theme="light"] .sidebar-container a {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+body[data-theme="light"] .sidebar-container .el-menu {
+  border: none;
+  height: 100%;
+}
+
+body[data-theme="light"] .sidebar-container .el-menu-item,
+body[data-theme="light"] .sidebar-container .el-submenu__title {
+  color: #7a80b4;
+}
+
+body[data-theme="light"] .sidebar-container .el-menu {
+  background-color: transparent;
+}
+
+body[data-theme="light"] .sidebar-container .submenu-title-noDropdown,
+body[data-theme="light"] .sidebar-container .el-submenu__title {
+  background: #fff;
+}
+
+body[data-theme="light"] .sidebar-container .submenu-title-noDropdown:hover,
+body[data-theme="light"] .sidebar-container .el-submenu__title:hover {
+  background-color: #e0ebf6 !important;
+}
+
+body[data-theme="light"] .sidebar-container .is-active > .el-submenu__title,
+body[data-theme="light"] .sidebar-container .is-active.submenu-title-noDropdown {
+  color: #409eff !important;
+}
+
+body[data-theme="light"] .sidebar-container .is-active > .el-submenu__title i,
+body[data-theme="light"] .sidebar-container .is-active.submenu-title-noDropdown i {
+  color: #409eff !important;
+}
+
+body[data-theme="light"] .sidebar-container .is-active {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #409eff !important;
+}
+
+body[data-theme="light"] .sidebar-container .nest-menu .el-submenu > .el-submenu__title,
+body[data-theme="light"] .sidebar-container .el-submenu .el-menu-item {
+  font-size: 12px;
+  min-width: 210px !important;
+  background-color: #fff !important;
+}
+
+body[data-theme="light"] .sidebar-container .nest-menu .el-submenu > .el-submenu__title:hover,
+body[data-theme="light"] .sidebar-container .el-submenu .el-menu-item:hover {
+  background-color: #e0ebf6 !important;
+}
+
+body[data-theme="light"] .hideSidebar .sidebar-container {
+  width: 54px !important;
+}
+
+body[data-theme="light"] .hideSidebar .main-container {
+  margin-left: 54px;
+}
+
+body[data-theme="light"] .hideSidebar .submenu-title-noDropdown {
+  padding: 0 !important;
+  position: relative;
+}
+
+body[data-theme="light"] .hideSidebar .submenu-title-noDropdown .el-tooltip {
+  padding: 0 !important;
+}
+
+body[data-theme="light"] .hideSidebar .el-submenu {
+  overflow: hidden;
+}
+
+body[data-theme="light"] .hideSidebar .el-submenu > .el-submenu__title .el-submenu__icon-arrow {
+  display: none;
+}
+
+body[data-theme="light"] .hideSidebar .el-menu--collapse {
+  margin-left: -5px;
+}
+
+body[data-theme="light"] .hideSidebar .el-menu--collapse .el-submenu > .el-submenu__title > span {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+}
+
+body[data-theme="light"] .el-menu--vertical .el-menu--popup {
+  background-color: #fff !important;
+}
+
+body[data-theme="light"] .el-menu--vertical .el-menu--popup .el-menu-item {
+  color: #7a80b4;
+  background-color: #fff;
+}
+
+body[data-theme="light"] .el-menu--vertical .el-menu--popup .el-menu-item:hover {
+  background-color: #e0ebf6;
+}
+
+body[data-theme="light"] .el-menu--vertical .el-menu--popup .el-submenu__title {
+  color: #7a80b4;
+}
+
+body[data-theme="light"] .el-menu--vertical > .el-menu i {
+  margin-right: 16px;
+}
+
+body[data-theme="light"] .el-menu--vertical .is-active > .el-submenu__title,
+body[data-theme="light"] .el-menu--vertical .is-active.submenu-title-noDropdown {
+  color: #409eff !important;
+}
+
+body[data-theme="light"] .el-menu--vertical .is-active > .el-submenu__title i,
+body[data-theme="light"] .el-menu--vertical .is-active.submenu-title-noDropdown i {
+  color: #409eff !important;
+}
+
+body[data-theme="light"] .el-menu--vertical .is-active {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #409eff !important;
+}
+
+body[data-theme="light"] .el-menu--vertical .nest-menu .el-submenu > .el-submenu__title:hover,
+body[data-theme="light"] .el-menu--vertical .el-menu-item:hover {
+  background-color: #e0ebf6 !important;
+}
+
+body[data-theme="light"] .el-scrollbar__wrap {
+  overflow: auto;
+  height: 100%;
+}
+
+body[data-theme="light"] .el-menu--collapse .el-menu .el-submenu {
+  min-width: 210px !important;
+}
+
+body[data-theme="light"] .mobile .main-container {
+  margin-left: 0px;
+}
+
+body[data-theme="light"] .mobile .sidebar-container {
+  -webkit-transition: -webkit-transform 0.28s;
+  transition: -webkit-transform 0.28s;
+  transition: transform 0.28s;
+  transition: transform 0.28s, -webkit-transform 0.28s;
+  width: 210px !important;
+}
+
+body[data-theme="light"] .mobile.hideSidebar .sidebar-container {
+  pointer-events: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transform: translate3d(-210px, 0, 0);
+          transform: translate3d(-210px, 0, 0);
+}
+
+body[data-theme="light"] .withoutAnimation .main-container,
+body[data-theme="light"] .withoutAnimation .sidebar-container {
+  -webkit-transition: none;
+  transition: none;
+}
+/*# sourceMappingURL=sidebar.css.map */
